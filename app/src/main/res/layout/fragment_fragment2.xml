@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment2">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkClothes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/clothes"
+                android:text="衣服饰品" />
+
+            <CheckBox
+                android:id="@+id/checkMedical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/medical"
+                android:text="健康医疗" />
+
+            <CheckBox
+                android:id="@+id/checkTZ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/tz"
+                android:text="投资支出" />
+
+            <CheckBox
+                android:id="@+id/checkSetting"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/settings"
+                android:text="设置" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/food"
+                android:checked="false"
+                android:text="餐饮食品" />
+
+            <CheckBox
+
+                android:id="@+id/checkTrans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/car"
+                android:text="行车交通" />
+
+            <CheckBox
+                android:id="@+id/checkHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:button="@drawable/house"
+                android:text="居家生活" />
+
+            <CheckBox
+                android:id="@+id/checkGame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@drawable/game"
+                android:text="休闲娱乐" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/camera" />
+
+            <Button
+                android:id="@+id/take_photo"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="从相册中加载photo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sign" />
+
+            <EditText
+                android:id="@+id/bw"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="(请输入备注内容)" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/location" />
+
+            <EditText
+                android:id="@+id/address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPostalAddress"
+                android:singleLine="false"
+                android:hint="请输入地址"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/loginp"
+                android:layout_width="40dp"
+                android:layout_height="35dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/calendar" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="date"
+                android:hint="请输入日期"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/money" />
+
+            <EditText
+                android:id="@+id/edtCost2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="请输入金额" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="100dp"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_light"
+            android:text="保存"
+            android:textColor="#201C1C"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

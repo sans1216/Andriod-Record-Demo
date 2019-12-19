@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".service.nav.main.PlaceholderFragment">
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="469dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear3"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="医疗健康"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="投资支出"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="其他支出"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="文化教育"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/textfinish"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="设置"
+            android:textSize="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_width="469dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear2"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/calendar" />
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/card" />
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/chats" />
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/check" />
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/books" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="469dp"
+        android:layout_height="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linear1"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/background_light"
+            android:text="餐饮食品"
+            android:textSize="12dp" />
+
+<!--        <TextView-->
+<!--            android:id="@+id/text1"-->
+<!--            android:layout_width="83dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:gravity="center"-->
+<!--            android:text="餐饮食品"-->
+<!--            android:textSize="12dp" />-->
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="衣服饰品"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="家居生活"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="行车交通"
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="休闲娱乐"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="469dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:clickable="true"
+            android:src="@drawable/bags" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/basketball" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/bell" />
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/books" />
+
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="31dp"
+            android:src="@drawable/cake" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

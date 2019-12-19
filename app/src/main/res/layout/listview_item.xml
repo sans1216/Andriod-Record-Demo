@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/lv_lnlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_AllType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="收入"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/costType_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/book" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_costType"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:text="文化用品"
+                android:textColor="#FC070707"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19/12/04"
+                android:textColor="#4B4444"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="63dp"
+            android:layout_weight="1"
+            android:text="5300"
+            android:textAlignment="center"
+            android:textColor="#C91E1E"
+            android:textSize="25sp" />
+
+    </LinearLayout>
+</LinearLayout>
